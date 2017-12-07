@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <title>Hangman</title>
+</head>
+
+<body> <!--onload="function(event)"-->
+    <div class="container">
+        <div class="jumbotron">
+            <h1> Hangman Reboot </h1>
+            <p> Can you guess the way to win today?</p>
+        </div>
+    </div>
+    <div id="game">
+        <div>
+			<p>Wins: <span id:winCount></span></p>
+			<p>Losses: <span id:lossCount></span></p>
+		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <p>Wins: <span id:winCount></span></p>
+                        <p>Losses: <span id:lossCount></span></p>
+                    </div>
+                    <div> Instructions
+                        <p>If the guessing player suggests a letter that occurs in the word, the blanks with that letter in the right places will appear. If the word does not contain the suggested letter, the letter will appear in the designated area.</p>
+                    </div>
+                    <p> Put some picture here</p>
+                </div>
+                <div class="col-md-6">
+                    <h3> Current Word <h3>
+				<div id= "wordWrap">
+					<div> <span id="word-blanks" class="display-3"> </span>
+					</div>
+					<div id="guesses-left">
+					</div>
+
+
+					
+					
+			<!--		<input id="letter" type="text">
+					<input type="button" value="letter" onClick="Letter()"/>
+					<p id="answer"></p>
+					<p id="counter"></p>
+					<p id="stat"></p> -->
+					</div>
+					<br>
+					<h3> Words Chosen</h3>
+                    
+                    <span id="wordused"></span>​
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>
